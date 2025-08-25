@@ -40,18 +40,39 @@ header h1 span { color: #a8631c; }
   gap: 24px;
 }
 
+/* Nouveau conteneur pour le SVG */
 .gallows {
   background: #fff8ee;
   border: 2px dashed #d9a15a;
-  padding: 16px;
+  padding: 10px;
   border-radius: 14px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 14px;
-  line-height: 1.05;
-  white-space: pre;
-  overflow: auto;
-  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
 }
+
+.svg-gallows {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+/* Bouton Rejouer */
+.replay {
+  border: 2px solid #0a8f37;
+  background: #ecfff3;
+  color: #0a8f37;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.replay:hover { background: #d6ffe5; }
+
 
 .word {
   display: flex;
@@ -149,6 +170,14 @@ header h1 span { color: #a8631c; }
 }
 .alert.error { background: #ffe8e8; border: 2px solid #ffb1b1; color: #8b1111; }
 .alert.success { background: #e8ffe8; border: 2px solid #b1ffb1; color: #0c6f0c; }
+.definition {
+  margin-top: 6px;
+  padding: 10px 12px;
+  background: #fff8ee;
+  border: 2px solid #d9a15a;
+  border-radius: 12px;
+  font-weight: 600;
+}
 
 @media (max-width: 800px) {
   .board { grid-template-columns: 1fr; }
