@@ -1,0 +1,5 @@
+<FilesMatch "^(mots\.txt|definitions\.json)$">
+  Require all denied
+</FilesMatch>
+
+DirectoryIndex index.php
